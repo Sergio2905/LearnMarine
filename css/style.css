@@ -409,6 +409,23 @@ body._lock {
   padding: 20px;
   border: 1px solid #EAEAEA;
   border-radius: 16px;
+  position: relative;
+}
+
+.select__checked._active::after {
+  transform: translate(0, -50%) rotate(-180deg);
+}
+
+.select__checked::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+  transition: all 0.5s ease;
 }
 
 .select label {
