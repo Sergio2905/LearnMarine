@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241225161340">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241226133213">
     <link rel="icon" type="image/ico" href="img/favicon.ico">
     <title>LearnMarine</title>
 
@@ -32,7 +32,8 @@
                                     organizations alike.
                                 </p>
                                 <div class="lm-main__extra">
-                                    <button type="button" class="lm-main__btn lm-btn_red">learn more</button>
+                                    <button type="button" class="lm-main__btn lm-btn_red" data-target="training">learn
+                                        more</button>
                                     <p class="lm-main__text">
                                         Explore NavSimulator Configurations
                                     </p>
@@ -53,7 +54,7 @@
                 </div>
             </main>
 
-            <section class="lm-training">
+            <section class="lm-training" id="training">
                 <div class="lm-training__container container">
                     <h2 class="lm-training__title">
                         Revolutionizing Maritime Training
@@ -114,7 +115,7 @@
                     </div>
                     <div class="lm-training__footer footer-lm-training">
                         <div class="footer-lm-training__logo">
-                            <img src="img/training/logo.svg" alt="Logo">
+                            <picture><source srcset="img/training/logo.webp" type="image/webp"><img src="img/training/logo.png" alt="Logo"></picture>
                         </div>
                         <div class="footer-lm-training__body">
                             <h3 class="footer-lm-training__title">
@@ -242,7 +243,9 @@
                                     Slow internet? No problem. Upgrade to the standalone version and train even in
                                     remote locations or during sea voyages with limited connectivity.
                                 </p>
-                                <button type="button" class="footer-lm-solutions__btn lm-btn_red">BUY NOW</button>
+                                <button type="button" class="footer-lm-solutions__btn lm-btn_red" data-target="prices">
+                                    BUY NOW
+                                </button>
                             </div>
                         </div>
 
@@ -466,7 +469,7 @@
                 </div>
             </section>
 
-            <section class="lm-prices">
+            <section class="lm-prices" id="prices">
                 <div class="lm-prices__container container">
                     <h2 class="lm-prices__title">
                         Compare prices
@@ -633,8 +636,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="table-lm-prices__extra">coming soon</div>
-                                                <button type="button"
-                                                    class="table-lm-prices__btn lm-btn_blue">request</button>
+                                                <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                    data-modal="request">request</button>
                                             </div>
                                             <div class="table-lm-prices__cell table-lm-prices__cell_blue">
                                                 <div class="table-lm-prices__values">
@@ -643,16 +646,26 @@
                                                     </div>
                                                 </div>
                                                 <div class="table-lm-prices__extra">price on request</div>
-                                                <button type="button"
-                                                    class="table-lm-prices__btn lm-btn_blue">request</button>
+                                                <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                    data-modal="request">request</button>
                                             </div>
                                         </div>
                                         <div class="table-lm-prices__btns">
-                                            <button type="button" class="table-lm-prices__btn lm-btn_red">BUY</button>
+                                            <button type="button" class="table-lm-prices__btn lm-btn_red">
+                                                <span>BUY</span>
+                                                <span>buy 2d version</span>
+                                            </button>
+                                            <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                data-modal="request">
+                                                <span>request</span>
+                                                <span>request 3d version</span>
+                                            </button>
                                             <button type="button"
-                                                class="table-lm-prices__btn lm-btn_blue">request</button>
-                                            <button type="button"
-                                                class="table-lm-prices__btn table-lm-prices__btn_desk lm-btn_blue">request</button>
+                                                class="table-lm-prices__btn table-lm-prices__btn_desk lm-btn_blue"
+                                                data-modal="request">
+                                                <span>request</span>
+                                                <span>request 3d version</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -811,8 +824,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="table-lm-prices__extra">coming soon</div>
-                                                <button type="button"
-                                                    class="table-lm-prices__btn lm-btn_blue">request</button>
+                                                <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                    data-modal="request">request</button>
                                             </div>
                                             <div class="table-lm-prices__cell table-lm-prices__cell_blue">
                                                 <div class="table-lm-prices__values">
@@ -821,16 +834,26 @@
                                                     </div>
                                                 </div>
                                                 <div class="table-lm-prices__extra">price on request</div>
-                                                <button type="button"
-                                                    class="table-lm-prices__btn lm-btn_blue">request</button>
+                                                <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                    data-modal="request">request</button>
                                             </div>
                                         </div>
                                         <div class="table-lm-prices__btns">
-                                            <button type="button" class="table-lm-prices__btn lm-btn_red">BUY</button>
+                                            <button type="button" class="table-lm-prices__btn lm-btn_red">
+                                                <span>BUY</span>
+                                                <span>buy 2d version</span>
+                                            </button>
+                                            <button type="button" class="table-lm-prices__btn lm-btn_blue"
+                                                data-modal="request">
+                                                <span>request</span>
+                                                <span>request 3d version</span>
+                                            </button>
                                             <button type="button"
-                                                class="table-lm-prices__btn lm-btn_blue">request</button>
-                                            <button type="button"
-                                                class="table-lm-prices__btn table-lm-prices__btn_desk lm-btn_blue">request</button>
+                                                class="table-lm-prices__btn table-lm-prices__btn_desk lm-btn_blue"
+                                                data-modal="request">
+                                                <span>request</span>
+                                                <span>request 3d version</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -909,7 +932,7 @@
                             From entry-level configurations to advanced systems, NavSimulator is your reliable partner
                             in maritime training.
                         </p>
-                        <button class="lm-slider__btn lm-btn_red">
+                        <button class="lm-slider__btn lm-btn_red" data-target="prices">
                             Get Started Now
                         </button>
                     </div>
@@ -949,7 +972,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="lm-scenario__btn lm-btn_blue">CHOOSE YOURS</button>
+                            <button type="button" class="lm-scenario__btn lm-btn_blue" data-target="prices">CHOOSE
+                                YOURS</button>
                         </div>
 
                         <div class="lm-scenario__block lm-scenario__block_revers">
@@ -983,7 +1007,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="lm-scenario__btn lm-btn_blue">CHOOSE YOURS</button>
+                            <button type="button" class="lm-scenario__btn lm-btn_blue" data-target="prices">CHOOSE
+                                YOURS</button>
                         </div>
 
                         <div class="lm-scenario__block">
@@ -1017,7 +1042,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="lm-scenario__btn lm-btn_blue">CONTACT US</button>
+                            <button type="button" class="lm-scenario__btn lm-btn_blue" data-modal="request">CONTACT
+                                US</button>
                         </div>
                     </div>
                 </div>
@@ -1136,15 +1162,92 @@
             </section>
 
             <div class="btns" style="display: flex; gap: 20px; padding: 20px;">
-                <button type="button" class="lm-btn_red" data-modal="modal-1">Popup 1</button>
-                <button type="button" class="lm-btn_blue" data-modal="modal-2">Popup 2</button>
+                <button type="button" class="lm-btn_red" data-modal="sign">Popup 1</button>
+                <button type="button" class="lm-btn_blue" data-modal="request">Popup 2</button>
             </div>
 
         </div>
 
+        <footer class="footer">
+    <div class="footer__container container">
+        <a href="/" class="footer__logo">
+            <img src="img/logo.svg" alt="Logo">
+        </a>
+        <div class="footer__body">
+            <div class="footer__left">
+                <div class="footer__menu menu-footer">
+                    <nav class="menu-footer__body">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Overview</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Versions</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Prices</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Cases</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:18313022334" class="footer__contact">+1 (831) 302-2334</a>
+                    <a href="mailto:info@learnmarine.com" class="footer__contact">info@learnmarine.com</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <h2 class="footer__title">Got more questions?</h2>
+                <p class="footer__text">
+                    Send us <a href="mailto:info@learnmarine.com">an email</a> or leave your contact details, and we’ll
+                    get back to you!
+                </p>
+                <form action="" class="footer__form">
+                    <input type="text" placeholder="Enter your Email">
+                    <button type="submit" class="footer__btn lm-btn_blue">SEND</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__rights">© 2025 Learnmarine LLC. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="" class="footer__link">Terms</a>
+                <a href="" class="footer__link">Privacy</a>
+                <a href="" class="footer__link">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
     </div>
 
-    <div class="modal" id="modal-1">
+    <div class="modal" id="sign">
     <div class="modal__wrapper">
         <div class="modal__content">
             <button type="button" class="modal__close">
@@ -1188,7 +1291,7 @@
     </div>
 </div>
 
-<div class="modal" id="modal-2">
+<div class="modal" id="request">
     <div class="modal__wrapper">
         <div class="modal__content">
             <button type="button" class="modal__close">
@@ -1257,7 +1360,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20241225161340" defer></script>
+    <script src="js/app.min.js?_v=20241226133213" defer></script>
 </body>
 
 </html>
