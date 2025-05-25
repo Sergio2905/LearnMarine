@@ -3546,6 +3546,7 @@ body._lock {
 .catalog__category {
   color: var(--black);
   font-weight: 600;
+  text-transform: uppercase;
   padding: 14px 16px;
   background: var(--white);
   border-radius: 50px;
